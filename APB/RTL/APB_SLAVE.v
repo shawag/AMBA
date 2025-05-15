@@ -86,7 +86,7 @@ always @(posedge PCLK or negedge RST_N) begin
     if(~RST_N)
         R_PRDATA <= {16{1'b0}};
     else if(state==RPHASE && PENABLE)
-        R_PRDATA <= ram[PADDR]
+        R_PRDATA <= ram[PADDR];
     else
         R_PRDATA <= R_PRDATA;
 end

@@ -1,4 +1,4 @@
-module APB4_SLAVE_INTERFACE(
+module APB4_SLAVE_INTERFACE#(
     parameter ADDRWIDTH = 12
 )
 (
